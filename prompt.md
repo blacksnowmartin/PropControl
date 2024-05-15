@@ -1,0 +1,1 @@
+Help me design a system a rental property owner can track tenants in his house whether a house is vacant or not, enable to create entry of tenant , view the entries of the tenants , enable him to modify the entries and also a feature of deleting them..... Then place of showing the payment details 
