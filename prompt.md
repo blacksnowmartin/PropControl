@@ -2,3 +2,5 @@ Help me design a system a rental property owner can track tenants in his house w
 The system is supposed to direct tenant on how to pay the rent.... Through which the system will prompt the STK to do a MPesa payment where the money goes to the bank account straight away.
 
 Firstly we focus on the owner administrator privileges then later how the tenant will be interacting with the system.
+
+Later on incorporate Report logs.
