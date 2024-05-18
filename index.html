@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Management System</title>
+</head>
+<body>
+    <h1>Tenants</h1>
+    <form action="/add_tenant" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="move_in_date">Move-in Date:</label>
+        <input type="text" id="move_in_date" name="move_in_date"><br><br>
+        <label for="lease_terms">Lease Terms:</label>
+        <input type="text" id="lease_terms" name="lease_terms"><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Occupied">Occupied</option>
+            <option value="Vacant">Vacant</option>
+        </select><br><br>
+        <button type="submit">Add Tenant</button>
+    </form>
+    
+    <ul>
+        {% for tenant in tenants %}
+            <li>
+                {{ tenant.name }} - Move-in Date: {{ tenant.move_in_date }} - Lease Terms: {{ tenant.lease_terms }} - Status: {{ tenant.status }}
+                <a href="/edit_tenant/{{ loop.index0 }}">Edit</a> | 
+                <a href="/delete_tenant/{{ loop.index0 }}">Delete</a> | 
+                <a href="/view_payments/{{ loop.index0 }}">View Payments</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Management System</title>
+</head>
+<body>
+    <h1>Tenants</h1>
+    <form action="/add_tenant" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="move_in_date">Move-in Date:</label>
+        <input type="text" id="move_in_date" name="move_in_date"><br><br>
+        <label for="lease_terms">Lease Terms:</label>
+        <input type="text" id="lease_terms" name="lease_terms"><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Occupied">Occupied</option>
+            <option value="Vacant">Vacant</option>
+        </select><br><br>
+        <button type="submit">Add Tenant</button>
+    </form>
+    
+    <ul>
+        {% for tenant in tenants %}
+            <li>
+                {{ tenant.name }} - Move-in Date: {{ tenant.move_in_date }} - Lease Terms: {{ tenant.lease_terms }} - Status: {{ tenant.status }}
+                <a href="/edit_tenant/{{ loop.index0 }}">Edit</a> | 
+                <a href="/delete_tenant/{{ loop.index0 }}">Delete</a> | 
+                <a href="/view_payments/{{ loop.index0 }}">View Payments</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

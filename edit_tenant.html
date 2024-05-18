@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Tenant</title>
+</head>
+<body>
+    <h1>Edit Tenant</h1>
+    <form action="/edit_tenant/{{ index }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ tenant.name }}"><br><br>
+        <label for="move_in_date">Move-in Date:</label>
+        <input type="text" id="move_in_date" name="move_in_date" value="{{ tenant.move_in_date }}"><br><br>
+        <label for="lease_terms">Lease Terms:</label>
+        <input type="text" id="lease_terms" name="lease_terms" value="{{ tenant.lease_terms }}"><br><br>
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="Occupied" {% if tenant.status == 'Occupied' %}selected{% endif %}>Occupied</option>
+            <option value="Vacant" {% if tenant.status == 'Vacant' %}selected{% endif %}>Vacant</option>
+        </select><br><br>
+        <button type="submit">Save Changes</button>
+    </form>
+</body>
+</html>
