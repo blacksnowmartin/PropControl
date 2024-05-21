@@ -6,3 +6,5 @@ Firstly we focus on the owner administrator privileges then later how the tenant
 Later on incorporate Report logs.
 
 The system will be purely web based.
+
+Future adaptations will be incorporating PayPal and credit cards payments.
