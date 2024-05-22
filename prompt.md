@@ -4,3 +4,7 @@ The system is supposed to direct tenant on how to pay the rent.... Through which
 Firstly we focus on the owner administrator privileges then later how the tenant will be interacting with the system.
 
 Later on incorporate Report logs.
+
+The system will be purely web based.
+
+Future adaptations will be incorporating PayPal and credit cards payments.
