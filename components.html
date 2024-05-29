@@ -1,0 +1,188 @@
+<div class="flex h-screen w-full flex-col">
+    <header class="bg-gray-950 px-6 py-4 text-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <a class="text-2xl font-bold" href="#">
+            Rental Management
+          </a>
+          <nav class="hidden md:flex items-center gap-6">
+            <a class="text-sm font-medium hover:underline" href="#">
+              Dashboard
+            </a>
+            <a class="text-sm font-medium hover:underline" href="#">
+              Properties
+            </a>
+            <a class="text-sm font-medium hover:underline" href="#">
+              Tenants
+            </a>
+          </nav>
+        </div>
+        <div class="flex items-center gap-4">
+          <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10 rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+            >
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+            </svg>
+            <span class="sr-only">Notifications</span>
+          </button>
+          <span class="relative flex shrink-0 overflow-hidden rounded-full w-10 h-10 border">
+            <img class="aspect-square h-full w-full" alt="Avatar" src="/placeholder-user.jpg" />
+          </span>
+        </div>
+      </div>
+    </header>
+    <main class="flex-1 bg-gray-100 dark:bg-gray-950">
+      <div class="container mx-auto py-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Total Properties</h3>
+              <p class="text-sm text-muted-foreground">
+                <div class="text-4xl font-bold">125</div>
+              </p>
+            </div>
+            <div class="flex items-center p-6">
+              <a class="text-sm font-medium hover:underline" href="#">
+                View Properties
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                Occupied Properties
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                <div class="text-4xl font-bold">92</div>
+              </p>
+            </div>
+            <div class="flex items-center p-6">
+              <a class="text-sm font-medium hover:underline" href="#">
+                View Occupied
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                Available Properties
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                <div class="text-4xl font-bold">33</div>
+              </p>
+            </div>
+            <div class="flex items-center p-6">
+              <a class="text-sm font-medium hover:underline" href="#">
+                View Available
+              </a>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Total Tenants</h3>
+              <p class="text-sm text-muted-foreground">
+                <div class="text-4xl font-bold">92</div>
+              </p>
+            </div>
+            <div class="flex items-center p-6">
+              <a class="text-sm font-medium hover:underline" href="#">
+                View Tenants
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <h2 class="text-2xl font-bold mb-4">Recent Activity</h2>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <div class="relative w-full overflow-auto">
+              <table class="w-full caption-bottom text-sm">
+                <thead class="[&amp;_tr]:border-b">
+                  <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                    <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                      Property
+                    </th>
+                    <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                      Tenant
+                    </th>
+                    <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                      Status
+                    </th>
+                    <th class="h-12 px-4 text-left align-middle font-medium text-muted-foreground [&amp;:has([role=checkbox])]:pr-0">
+                      Last Updated
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="[&amp;_tr:last-child]:border-0">
+                  <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                      <a class="font-medium hover:underline" href="#">
+                        123 Main St
+                      </a>
+                    </td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                      <a class="font-medium hover:underline" href="#">
+                        John Doe
+                      </a>
+                    </td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Occupied</td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">2 days ago</td>
+                  </tr>
+                  <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                      <a class="font-medium hover:underline" href="#">
+                        456 Oak Rd
+                      </a>
+                    </td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                      <a class="font-medium hover:underline" href="#">
+                        Jane Smith
+                      </a>
+                    </td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Occupied</td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">1 week ago</td>
+                  </tr>
+                  <tr class="border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted">
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">
+                      <a class="font-medium hover:underline" href="#">
+                        789 Elm St
+                      </a>
+                    </td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">-</td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">Available</td>
+                    <td class="p-4 align-middle [&amp;:has([role=checkbox])]:pr-0">3 days ago</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-950 px-6 py-4 text-white">
+      <div class="container mx-auto flex items-center justify-between">
+        <p class="text-sm">© 2024 Rental Management</p>
+        <nav class="flex items-center gap-4">
+          <a class="text-sm font-medium hover:underline" href="#">
+            About
+          </a>
+          <a class="text-sm font-medium hover:underline" href="#">
+            Contact
+          </a>
+          <a class="text-sm font-medium hover:underline" href="#">
+            Terms
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </div>
