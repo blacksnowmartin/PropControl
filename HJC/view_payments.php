@@ -56,3 +56,10 @@
 
 <?php $conn->close(); ?>
 
+
+<!-- This is the main HTML file for displaying the payments of a tenant -->
+<!-- It includes a form to add a new payment and a list of all the payments made by the tenant -->
+<!-- The form asks for the amount, date, and status of the payment -->
+<!-- The list displays the amount, date, and status of each payment made by the tenant -->
+<!-- The "Back to Tenants" button at the bottom takes the user back to the main page where they can view all the tenants and their payments -->
+
