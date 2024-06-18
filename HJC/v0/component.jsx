@@ -62,7 +62,7 @@ export default function Component() {
       </main>
       <footer className="bg-gray-900 text-white py-6 px-6 md:px-8">
         <div className="container mx-auto flex items-center justify-between">
-          <p className="text-sm">&copy; 2024 Acme Rentals</p>
+          <p className="text-sm">&copy; 2024 Acrossnow Rentals</p>
           <nav className="flex items-center gap-4">
             <Link href="#" className="hover:underline" prefetch={false}>
               Privacy
