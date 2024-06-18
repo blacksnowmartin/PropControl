@@ -24,3 +24,4 @@ form.addEventListener('submit', function(event) {
 });
 
 // Payment details verification 
+// The stripe function needs to be reviewed for security flaws if they are present.
