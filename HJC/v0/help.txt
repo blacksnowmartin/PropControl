@@ -1,3 +1,6 @@
+The prompt 
+if you are a react developer who has managed only to create helloworld then you are provided with component.jsx and layout.jsx codes can you create a meaningful project with those two codes .... if not what else is required
+
 I'd be glad to help you create a meaningful React project beyond a simple "Hello World" using
 Copy code
 component.jsx
