@@ -10,8 +10,8 @@
 <html>
 <head>
     <title>Payments for <?php echo $tenant['name']; ?></title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
+    <!-- Always use a specific version of Bootstrap to ensure consistent styling across different environments. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-pLwxKCuUCYsBH+7928r8+XU46o0Y9e5vG1i9TJy1VvE87J/b/xkqb6Ww" crossorigin="anonymous">
 <body>
     <div class="container mt-5">
         <div class="card">
