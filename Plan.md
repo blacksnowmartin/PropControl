@@ -15,4 +15,18 @@ Project Goals
 Provide a user-friendly interface for property owners to manage tenants and payments.
 Enable tenants to view their payment details and make payments online.
 Ensure secure handling of sensitive information and payment data.
+
+### Project structure
+project/
+│
+├── index.php
+├── login.php
+├── tenant_dashboard.php
+├── add_payment.php
+├── view_payments.php
+├── style.css
+├── script.js
+├── stripe_config.php
+└── db.php
+
 ### Blacksnow Martin 2024©
