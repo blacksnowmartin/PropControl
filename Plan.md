@@ -19,14 +19,23 @@ Ensure secure handling of sensitive information and payment data.
 ### Project structure
 project/
 │
+
 ├── index.php
+
 ├── login.php
+
 ├── tenant_dashboard.php
+
 ├── add_payment.php
+
 ├── view_payments.php
+
 ├── style.css
+
 ├── script.js
+
 ├── stripe_config.php
+
 └── db.php
 
 ### Blacksnow Martin 2024©
