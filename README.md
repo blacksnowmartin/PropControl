@@ -2,6 +2,7 @@
 An advanced system to track rent payments easing the work of property agents.
 And also an interface where the tenants can pay their rent and view their history of payments.
 
-An improved version that is Web3 is on its way. 
+Planning to have an improved version that is fully Web3 and is ongoing . 
+
 
 ## Blaksnow Martin 2024© 
