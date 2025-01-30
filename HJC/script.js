@@ -53,4 +53,59 @@ document.addEventListener('DOMContentLoaded', () => {
       li.textContent = `${notification.message} - ${notification.date}`;
       notificationsList.appendChild(li);
     });
+
+    // Initialize local storage
+    const storedProperties = JSON.parse(localStorage.getItem('properties')) || [];
+    const storedTenants = JSON.parse(localStorage.getItem('tenants')) || [];
+    
+    // Function to save properties to local storage
+    function saveProperties() {
+      localStorage.setItem('properties', JSON.stringify(storedProperties));
+    }
+
+    // Function to save tenants to local storage
+    function saveTenants() {
+      localStorage.setItem('tenants', JSON.stringify(storedTenants));
+    }
+
+    // Add event listeners for modals
+    const propertyModal = document.getElementById('property-modal');
+    const tenantModal = document.getElementById('tenant-modal');
+    const propertyForm = document.getElementById('property-form');
+    const tenantForm = document.getElementById('tenant-form');
+
+    document.getElementById('add-property-btn').addEventListener('click', () => {
+      propertyModal.style.display = 'block';
+    });
+
+    propertyForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('property-name').value;
+      const address = document.getElementById('property-address').value;
+      const rent = document.getElementById('property-rent').value;
+      storedProperties.push({ name, address, rentAmount: rent });
+      saveProperties();
+      propertyModal.style.display = 'none';
+      location.reload(); // Refresh to update the table
+    });
+
+    // Close modals
+    document.querySelectorAll('.close').forEach(closeBtn => {
+      closeBtn.onclick = function() {
+        propertyModal.style.display = 'none';
+        tenantModal.style.display = 'none';
+      }
+    });
+
+    // Pop-up notification for rent due
+    function checkRentDue() {
+      const today = new Date().toISOString().split('T')[0];
+      storedProperties.forEach(property => {
+        if (property.rentDueDate === today) {
+          alert(`Rent is due for ${property.name}`);
+        }
+      });
+    }
+
+    checkRentDue();
   });

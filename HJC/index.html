@@ -11,7 +11,10 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="logo">PropControl</div>
+    <div class="logo">
+      <img src="path/to/logo.png" alt="Logo" style="height: 40px;">
+      PropControl
+    </div>
     <ul class="nav-links">
       <li><a href="#dashboard">Dashboard</a></li>
       <li><a href="#properties">Properties</a></li>
@@ -19,6 +22,32 @@
       <li><a href="#notifications">Notifications</a></li>
     </ul>
   </nav>
+
+  <!-- Modals for Adding/Updating Properties and Tenants -->
+  <div id="property-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add/Update Property</h2>
+      <form id="property-form">
+        <input type="text" id="property-name" placeholder="Property Name" required>
+        <input type="text" id="property-address" placeholder="Address" required>
+        <input type="number" id="property-rent" placeholder="Rent Amount" required>
+        <button type="submit" class="btn">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="tenant-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add/Update Tenant</h2>
+      <form id="tenant-form">
+        <input type="text" id="tenant-name" placeholder="Tenant Name" required>
+        <input type="text" id="tenant-property" placeholder="Property" required>
+        <button type="submit" class="btn">Save</button>
+      </form>
+    </div>
+  </div>
 
   <!-- Dashboard Section -->
   <section id="dashboard" class="section">
