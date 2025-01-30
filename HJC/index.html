@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropControl - Property Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add Universe.io CSS (if available) -->
+  <link rel="stylesheet" href="https://universe.io/assets/css/universe.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">PropControl</div>
+    <ul class="nav-links">
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#payments">Payments</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="section">
+    <h1>Dashboard</h1>
+    <div class="cards">
+      <div class="card">
+        <h3>Total Properties</h3>
+        <p id="total-properties">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Tenants</h3>
+        <p id="total-tenants">0</p>
+      </div>
+      <div class="card">
+        <h3>Total Payments</h3>
+        <p id="total-payments">0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Properties Section -->
+  <section id="properties" class="section">
+    <h1>Properties</h1>
+    <button id="add-property-btn" class="btn">Add Property</button>
+    <table id="properties-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Rent Amount</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Properties will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Payments Section -->
+  <section id="payments" class="section">
+    <h1>Payments</h1>
+    <table id="payments-table">
+      <thead>
+        <tr>
+          <th>Tenant</th>
+          <th>Property</th>
+          <th>Amount Paid</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Payments will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Notifications Section -->
+  <section id="notifications" class="section">
+    <h1>Notifications</h1>
+    <button id="send-notification-btn" class="btn">Send Notification</button>
+    <ul id="notifications-list">
+      <!-- Notifications will be dynamically added here -->
+    </ul>
+  </section>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
