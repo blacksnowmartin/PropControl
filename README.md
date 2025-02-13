@@ -1,4 +1,4 @@
-# PropControl
+# PropControl⬛◾⬛◾⬛⬛
 An advanced system to track rent payments easing the work of property agents.
 And also an interface where the tenants can pay their rent and view their history of payments.
 
@@ -8,3 +8,4 @@ Please feel free to contribute 😁
 Inspired by Justus Kimuyu. 
 
 ## Blaksnow Martin 2024© 
+
