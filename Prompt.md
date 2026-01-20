@@ -1,0 +1,1 @@
+Create a system for rent collection from tenants.... The System leverages on payments that have been made on bank payments... System leverages on bank payments. 
